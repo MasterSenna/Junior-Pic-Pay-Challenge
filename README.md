@@ -1,1 +1,1 @@
-# Junior-Pic-Pay-Challenge
+Pic-Pay-Challenge
