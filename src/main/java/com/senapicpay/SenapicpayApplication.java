@@ -2,6 +2,8 @@ package com.senapicpay;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class SenapicpayApplication {
@@ -10,4 +12,9 @@ public class SenapicpayApplication {
 		SpringApplication.run(SenapicpayApplication.class, args);
 	}
 
+	// Definir um bean RestTemplate para ser usado na aplicação
+	@Bean
+	public RestTemplate restTemplate() {
+		return new RestTemplate();
+	}
 }
