@@ -7,7 +7,14 @@ public class TransactionDTO {
     private Long senderId;
     private Long receiverId;
 
-    // Construtores, getters e setters
+    // Construtor que aceita os argumentos
+    public TransactionDTO(BigDecimal value, Long senderId, Long receiverId) {
+        this.value = value;
+        this.senderId = senderId;
+        this.receiverId = receiverId;
+    }
+
+    // Getters e setters
     public BigDecimal getValue() {
         return value;
     }

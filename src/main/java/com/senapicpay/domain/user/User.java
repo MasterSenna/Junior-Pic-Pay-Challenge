@@ -44,6 +44,9 @@ public class User {
 
     }
 
+    public User(long l, String maria, String souza, String number, String mail, String number1, BigDecimal bigDecimal, UserType userType) {
+    }
+
     public BigDecimal getBalance() {
         return balance;
     }
